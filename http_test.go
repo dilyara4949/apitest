@@ -1,5 +1,5 @@
-//go:build integration
-// +build integration
+//go:build integration || all
+// +build integration all
 
 package main
 
@@ -11,7 +11,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetProcess(t *testing.T) {
@@ -40,7 +40,7 @@ func TestGetProcess(t *testing.T) {
 	}
 	data, err := io.ReadAll(resp.Body)
 
-	assert.Equal(t, expectedJson, data)
+	require.Equal(t, expectedJson, data)
 }
 
 func TestPostProcess(t *testing.T) {
@@ -63,7 +63,7 @@ func TestPostProcess(t *testing.T) {
 	}
 
 	fmt.Println(string(data), string(expected))
-	assert.Equal(t, expected, data)
+	require.Equal(t, expected, data)
 }
 
 func TestDeleteProcess(t *testing.T) {
@@ -86,5 +86,5 @@ func TestDeleteProcess(t *testing.T) {
 	}
 
 	fmt.Println(string(data), string(expected))
-	assert.Equal(t, expected, data)
+	require.Equal(t, expected, data)
 }
