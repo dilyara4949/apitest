@@ -1,0 +1,20 @@
+mode: set
+apitest/main.go:21.35,26.2 3 1
+apitest/main.go:28.34,33.2 3 1
+apitest/main.go:35.31,40.2 3 1
+apitest/main.go:54.54,56.23 1 1
+apitest/main.go:56.23,59.3 2 0
+apitest/main.go:61.2,61.18 1 1
+apitest/main.go:62.13,67.21 4 1
+apitest/main.go:67.21,70.4 2 0
+apitest/main.go:72.3,78.17 3 1
+apitest/main.go:78.17,81.4 2 0
+apitest/main.go:83.3,83.34 1 1
+apitest/main.go:85.14,87.39 1 1
+apitest/main.go:87.39,90.4 2 0
+apitest/main.go:92.3,97.74 5 1
+apitest/main.go:98.16,100.39 1 1
+apitest/main.go:100.39,103.4 2 0
+apitest/main.go:105.3,109.47 4 1
+apitest/main.go:111.10,113.76 2 0
+apitest/main.go:117.13,123.2 3 0
